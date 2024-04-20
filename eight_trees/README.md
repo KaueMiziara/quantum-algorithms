@@ -1,4 +1,4 @@
-## Problem of the 8 Trees
+## Eight Trees Problem
 Create a function that receives as input a list of integers representing the presence (_1_) or absence (_0_) of trees. <br>
 
 > Adjacent trees form a _set_ of trees. <br>
