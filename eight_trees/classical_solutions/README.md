@@ -1,9 +1,7 @@
 # Classical Solutions
 
 ## Haskell
-This approach in functional programming defines a function with overloads to count subsets, then returns `0` if the number is even or `1` if it's odd. <br>
-
-In the way the function is implemented, it is already able to solve similar problems for an input of size `n`.
+[Medium post explaining the solution](https://medium.com/@kauemiziara/eight-trees-problem-1-46a74c27b81a)
 
 ```haskell
 eightTrees :: [Int] -> Int
