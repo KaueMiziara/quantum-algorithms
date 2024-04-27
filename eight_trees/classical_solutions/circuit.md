@@ -5,7 +5,7 @@
 10 -> 1 <br>
 11 -> 1 <br>
 
-> Out = A + B
+- Out = A + B
 
 ### 3 Trees
 **ABC -> Out** <br>
@@ -18,7 +18,7 @@
 110 -> 1 <br>
 111 -> 1 <br>
 
-> Out = ((A + B) X (B + C)) + B <br>
+- Out = ((A + B) X (B + C)) + B <br>
 
 ### 4 Trees
 **ABCD -> Out** <br>
@@ -39,5 +39,5 @@
 1110 -> 1 <br>
 1111 -> 1 <br>
 
-> Out = 
+- Out = 
 
