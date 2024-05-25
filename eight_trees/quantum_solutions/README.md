@@ -1,6 +1,8 @@
 # Quantum Solutions
 
 ## Qiskit
+[Medium post explaining the solution (WIP)](https://medium.com/@kauemiziara)
+
 ```python
 def eight_trees(trees: list) -> int:
     qc = QuantumCircuit(9, 1)
