@@ -1,32 +1,18 @@
 # Quantum Solutions
 
 ## Qiskit
-[Medium post explaining the solution (WIP)](https://medium.com/@kauemiziara)
+[Medium post explaining the solution](https://medium.com/@kauemiziara/eight-trees-problem-2-c74764013cc6)
 
 ```python
 def eight_trees(trees: list) -> int:
-    qc = QuantumCircuit(9, 1)
-    [qc.x(i) for i in range(8) if trees[i]]
+    n = len(trees)
+    qc = QuantumCircuit(n+1, 1)
+    [qc.x(i) for i in range(n) if trees[i]]
 
-    qc.cx(0, 8)
-    qc.cx(1, 8)
-    qc.cx(2, 8)
-    qc.cx(3, 8)
-    qc.cx(4, 8)
-    qc.cx(5, 8)
-    qc.cx(6, 8)
-    qc.cx(7, 8)
-    qc.ccx(0, 1, 8)
-    qc.ccx(1, 2, 8)
-    qc.ccx(2, 3, 8)
-    qc.ccx(3, 4, 8)
-    qc.ccx(4, 5, 8)
-    qc.ccx(5, 6, 8)
-    qc.ccx(6, 7, 8)
+    [qc.cx(i, n) for i in range(n)]
+    [qc.ccx(i, i+1, n) for i in range(n - 1)]
 
-    qc.measure(8, 0)
-
-    display(qc.draw())
+    qc.measure(n, 0)
 
     backend = AerSimulator()
     result = backend.run(qc, shots = 1).result().get_counts()
