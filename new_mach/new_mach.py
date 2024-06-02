@@ -1,6 +1,3 @@
-# New Mach
-
-```python
 import numpy as np
 from qiskit.circuit import QuantumCircuit, Qubit, Clbit
 from qiskit.quantum_info import Operator
@@ -63,14 +60,3 @@ def mz_interferometer(r: float) -> np.array:
     p_d = det_d/shots
     
     return np.array([p_ac, p_d])
-```
-
-```python
-test_cases = [
-    ('0.1', '[0.990234375, 0.009765625]'),
-    ('0.3124456', '[0.915283203125, 0.084716796875]'),
-    ('0.5', '[0.8125, 0.1875]'),
-    ('0.577350269', '[0.777778, 0.222222]'),
-    ('0.9', '[0.842529296875, 0.157470703125]')
-]
-```
