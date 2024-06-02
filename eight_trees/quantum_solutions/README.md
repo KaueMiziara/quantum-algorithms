@@ -20,3 +20,15 @@ def eight_trees(trees: list) -> int:
     output = list(result.keys())[0]
     return int(output)
 ```
+
+## Example
+```python
+eight_trees([1, 0, 1, 1, 0, 0, 1, 1])
+``` 
+```bash
+# Output
+1
+# Output image:
+```
+
+![Output imge](./output.png)
